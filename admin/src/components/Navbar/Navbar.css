@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+.navbar .logo{
+    width: max(10%,80px);
+}
+
+.navbar .logo-text{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6347;
+    margin: 0;
+}
+
+.navbar .profile{
+    width: 40px;
+}
+.login-conditon{
+    font-size: 20px;
+}
