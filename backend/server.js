@@ -13,7 +13,15 @@ const port =process.env.PORT || 4000;
 
 //middlewares
 app.use(express.json());
-app.use(cors());
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://ambro.vercel.app'
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
 
 // DB connection
 connectDB();
